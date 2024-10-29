@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "Next Signal"
+name = "nextsignal"
 version = "0.4.1"
 description = "Servidor para escuchar FM con RTL-SDR (con interfaz web)"
 authors = ["Aaron Gibson <eulersidcrisis@yahoo.com>", "Iván Gómez"]
@@ -51,9 +51,9 @@ pylint = "^3.2.5"
 mypy = "^1.10.1"
 
 [tool.poetry.scripts]
-pysdrweb_server = 'pysdrweb.fmserver.server:fm_server_command'
+pysdrweb_server = 'nextsignal.fmserver.server:fm_server_command'
 # We'll keep this alias for legacy purposes.
-sdrfm_server = 'pysdrweb.fmserver.server:fm_server_command'
+sdrfm_server = 'nextsignal.fmserver.server:fm_server_command'
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
