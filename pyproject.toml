@@ -1,11 +1,11 @@
 [tool.poetry]
-name = "pysdrweb"
+name = "Next Signal"
 version = "0.4.1"
-description = "Server to host FM Radio via RTL-SDR utilities."
-authors = ["Aaron Gibson <eulersidcrisis@yahoo.com>"]
+description = "Servidor para escuchar FM con RTL-SDR (con interfaz web)"
+authors = ["Aaron Gibson <eulersidcrisis@yahoo.com>", "Iván Gómez"]
 license = "MIT License"
 readme = "README.md"
-repository = "https://github.com/eulersIDcrisis/pysdrweb"
+repository = "https://github.com/nextsuite/nextsignal"
 classifiers = [
     "Programming Language :: Python :: 3",
     "License :: OSI Approved :: MIT License",
@@ -19,7 +19,10 @@ classifiers = [
     "Topic :: Multimedia :: Sound/Audio :: Players"
 ]
 include = [
-    "pysdrweb/data/index.html"
+    "pysdrweb/data/index.html",
+    "pysdrweb/data/style.css",
+    "pysdrweb/data/app.js",
+    "pysdrweb/data/icono.png"
 ]
 packages = [
     { include = "pysdrweb", from = "src/python" },
@@ -28,7 +31,7 @@ packages = [
 
 
 [tool.poetry.urls]
-"Bug Tracker" = "https://github.com/eulersIDcrisis/pysdrweb/issues"
+"Bug Tracker" = "https://github.com/nextsuite/nextsignal/issues"
 
 [tool.poetry.dependencies]
 python = ">=3.8,<4"
